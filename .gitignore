@@ -1,0 +1,25 @@
+# MATLAB Files
+*.mat
+*.asv
+*.fig
+*.m~
+
+# Compiled MEX binaries
+*.mexmaci64
+*.mexw64
+*.mexa64
+
+# ANSYS / CFD Solver Files (Crucial to prevent giant file uploads)
+*.cas
+*.cas.h5
+*.dat
+*.dat.h5
+*.jou
+*.trn
+*.msh
+*.flprj
+*.out
+
+# OS Generated Files
+.DS_Store
+Thumbs.db
