@@ -27,6 +27,9 @@ Your system must have the following software installed:
 
 ## 2. Running the MATLAB Optimization
 
+**Make sure the xfoil.exe file is sitting right next to config.m and main.m in the root directory!!**
+**Create a folder inside the extracted repo called "Airfoils"!!**
+
 1.  Open `config.m` and set your target flight conditions (e.g., `CFG.Mach = 0.80`, `CFG.CL_Target = 0.40`).
 2.  In `config.m`, set your computational limits. For a quick validation test, use `PopulationSize = 50` and `MaxGenerations = 20`. For a production run, use `200` and `100`.
 3.  Open `main.m` and click **Run**.
