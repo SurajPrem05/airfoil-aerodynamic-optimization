@@ -10,6 +10,8 @@ The pipeline consists of three primary phases:
 2.  **Multi-Objective Optimization (MATLAB + XFOIL):** A Genetic Algorithm (`gamultiobj`) evaluates thousands of geometries using XFOIL as a rapid 2D physics solver. The algorithm maps the Pareto frontier by simultaneously maximizing the Lift-to-Drag ratio and the extent of Laminar Flow, while utilizing soft-penalty constraints to maintain a strict Lift Coefficient floor and stable Pitching Moment at Mach 0.8.
 3.  **High-Fidelity Validation (ANSYS Fluent):** Because low-fidelity panel methods cannot predict compressible wave drag or shockwave-induced separation, the most optimal geometry can be exported to ANSYS Fluent. Then, a density-based Navier-Stokes simulation utilizing the k-omega SST turbulence model can be run to validate the algorithmic design and visualize the transonic shockwave phenomena.
 
+https://github.com/user-attachments/assets/b55c260b-079b-443a-8c41-6b244fcba418
+
 ---
 
 ## 1. Required Software
@@ -102,6 +104,8 @@ To visualize why the genetic algorithm made its design choices, generate a Mach 
 1. Navigate to Results -> Graphics -> Contours.
 2. Ensure Filled is checked. Select Velocity... and Mach Number. 
 3. Leave Surfaces blank to color the entire flow field, then click Save/Display.
+
+<img width="3182" height="1344" alt="AnsysCFDContour" src="https://github.com/user-attachments/assets/a4b5abce-fb6d-407b-8cd5-fc9f396312c8" />
 
 ### Interpreting the Results (The "XFOIL Lie")
 
